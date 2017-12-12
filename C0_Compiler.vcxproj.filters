@@ -24,12 +24,48 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LexicialAnalyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WORD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C0_Compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LexicialAnalyzer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WORD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RUN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="C0_Compiler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LexicialAnalyzer_GetFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LexicialAnalyzer_Interfaces.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LexicialAnalyzer_IsFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LexicialAnalyzer_ToolFunctions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
