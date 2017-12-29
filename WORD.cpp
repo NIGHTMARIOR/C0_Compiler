@@ -26,6 +26,16 @@ bool WORD::operator==(WORD A)
 	return true;
 }
 
+bool WORD::operator==(string A)
+{
+	return false;
+}
+
+bool WORD::operator!=(string A)
+{
+	return false;
+}
+
 bool WORD::operator!=(WORD A)
 {
 	return !operator==(A);
@@ -39,21 +49,18 @@ WORD WORD::GetName()
 const vector<KeyWord> KeyWords =
 {
 	KeyWord("const"),
-	KeyWord("var"),
 	KeyWord("procedure"),
 	KeyWord("if"),
-	KeyWord("then"),
 	KeyWord("else"),
-	KeyWord("odd"),
 	KeyWord("while"),
-	KeyWord("do"),
-	KeyWord("call"),
-	KeyWord("begin"),
-	KeyWord("end"),
-	KeyWord("repeat"),
-	KeyWord("until"),
 	KeyWord("read"),
 	KeyWord("write"),
+	KeyWord("int"),
+	KeyWord("void"),
+	KeyWord("scanf"),
+	KeyWord("printf"),
+	KeyWord("return"),
+	KeyWord("main"),
 };
 const vector<Delimiter> Delimiters =
 {
@@ -71,6 +78,8 @@ const vector<Operator> Operators =
 	Operator("+"),
 	Operator("-"),
 	Operator("*"),
+	Operator(","),
+	Operator(";"),
 };
 const vector<BinaryOperator> BinaryOperators =
 {

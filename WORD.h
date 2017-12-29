@@ -1,10 +1,13 @@
 #pragma once
 
+//调用该程序的时候，不弹出命令行
 #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
+
 #include <string>
 #include <vector>
 using namespace std;
 
+//单词的种类
 enum KIND
 {
 	KEYWORD,
@@ -13,7 +16,7 @@ enum KIND
 	DELIMITER,
 	OPERATOR,
 	BINARYOPERATOR,
-	ERROR
+	ERROR,
 };
 
 class WORD
@@ -25,6 +28,8 @@ public:
 	void operator=(WORD A);
 	bool operator==(WORD A);
 	bool operator!=(WORD A);
+	bool operator==(string A);//TODO:完善
+	bool operator!=(string A);//TODO:完善
 	
 	string name;
 	string kind;

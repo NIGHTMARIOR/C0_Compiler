@@ -2,11 +2,11 @@
 #include "LexicialAnalyzer.h"
 
 
-LexicialAnalyzer::LexicialAnalyzer()
+LexicialAnalyzerProgram::LexicialAnalyzerProgram(string)
 {
 }
 
 
-LexicialAnalyzer::~LexicialAnalyzer()
+LexicialAnalyzerProgram::~LexicialAnalyzerProgram()
 {
 }
